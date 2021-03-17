@@ -308,6 +308,7 @@ footer section:nth-child(2) ul li:last-child {
 
 @media (min-width: 992px) {
   nav {
+    margin: 0;
     margin-right: auto;
   }
 
