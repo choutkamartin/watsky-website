@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>George Watsky</title>
-    <meta property="og:url" content="https://www.georgewatsky.com/" />
+    <meta
+      property="og:url"
+      content="https://choutkamartin.github.io/watsky-website/"
+    />
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
@@ -28,18 +31,20 @@
   </head>
   <body>
     <header>
-      <img src="watsky.svg" alt="" width="60" />
+      <a href="https://choutkamartin.github.io/watsky-website/">
+        <img src="watsky.svg" alt="Watsky logo" width="60" />
+      </a>
       <nav>
         <ul>
-          <li><a href="">About</a></li>
-          <li><a href="">Tours</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Videos</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="">Store</a></li>
+          <li><a href="#general-info">About</a></li>
+          <li><a href="#tours-info">Tours</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#video">Video</a></li>
+          <li><a href="#audio">Audio</a></li>
+          <li><a href="#contact-form">Contact Form</a></li>
         </ul>
       </nav>
-      <form action="">
+      <form>
         <input type="text" placeholder="Keyword" />
         <button type="submit">Search</button>
       </form>
@@ -49,10 +54,10 @@
         <div id="jumbotron-info">
           <h1>Watsky</h1>
           <h2>Music producer, poet and producer based in California</h2>
-          <button>Learn more</button>
+          <a href="#general-info">Learn more</a>
         </div>
       </section>
-      <section id="general-info">
+      <div id="general-info">
         <section>
           <h2>A note from George on refunding concerts</h2>
           <p>
@@ -110,38 +115,38 @@
             </li>
           </ul>
         </div>
-      </section>
+      </div>
       <section id="gallery">
         <h2>Check out our concert photos</h2>
         <div>
           <figure>
-            <img src="figure-1.jpg" alt="The beautiful MDN logo." width="500" />
+            <img src="figure-1.jpg" alt="Concert Photo" width="500" />
             <figcaption>Concert Photo</figcaption>
           </figure>
           <figure>
-            <img src="figure-2.jpg" alt="The beautiful MDN logo." width="500" />
+            <img src="figure-2.jpg" alt="Concert Photo" width="500" />
             <figcaption>Concert Photo</figcaption>
           </figure>
           <figure>
-            <img src="figure-3.jpg" alt="The beautiful MDN logo." width="500" />
+            <img src="figure-3.jpg" alt="Concert Photo" width="500" />
             <figcaption>Concert Photo</figcaption>
           </figure>
           <figure>
-            <img src="figure-4.jpg" alt="The beautiful MDN logo." width="500" />
+            <img src="figure-4.jpg" alt="Concert Photo" width="500" />
             <figcaption>Concert Photo</figcaption>
           </figure>
           <figure>
-            <img src="figure-5.jpg" alt="The beautiful MDN logo." width="500" />
+            <img src="figure-5.jpg" alt="Concert Photo" width="500" />
             <figcaption>Concert Photo</figcaption>
           </figure>
           <figure>
-            <img src="figure-6.jpg" alt="The beautiful MDN logo." width="500" />
+            <img src="figure-6.jpg" alt="Concert Photo" width="500" />
             <figcaption>Concert Photo</figcaption>
           </figure>
         </div>
       </section>
       <section id="about">
-        <img src="watsky.svg" alt="" width="200" />
+        <img src="watsky.svg" alt="Watsky logo" width="200" />
         <div id="about-flex">
           <div>
             <h3>Hip Hop</h3>
@@ -183,7 +188,6 @@
               src="https://www.youtube-nocookie.com/embed/VCEsveSK5to?controls=0"
               width="560"
               height="315"
-              frameborder="0"
               class="resp-iframe"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
@@ -203,24 +207,17 @@
       </section>
       <section id="contact-form">
         <h2>Contact us</h2>
-        <form action="">
-          <label for="exampleFormControlTextarea1" class="form-label"
-            >Name</label
-          >
-          <input type="text" placeholder="Mike" />
-          <label for="exampleFormControlTextarea1" class="form-label"
-            >Age</label
-          >
-          <input type="number" placeholder="18" />
-          <label for="exampleFormControlTextarea1" class="form-label"
-            >Message</label
-          >
+        <form>
+          <label for="nameInput" class="form-label">Name</label>
+          <input type="text" placeholder="Mike" id="nameInput" />
+          <label for="ageInput" class="form-label">Age</label>
+          <input type="number" placeholder="18" id="ageInput" />
+          <label for="messageInput" class="form-label">Message</label>
           <textarea
-            name=""
-            id=""
             cols="30"
             rows="5"
             placeholder="Hey there. I'm a long time fan Watsky!"
+            id="messageInput"
           ></textarea>
           <button type="submit">Send</button>
         </form>
